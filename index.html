@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HET - Erişim ve Doğrulama Portalı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f1016;
+            color: #f1f1f1;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: #161821;
+            border: 1px solid #2a2e3d;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .profile-badge {
+            display: inline-block;
+            background: rgba(138, 43, 226, 0.15);
+            color: #a855f7;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p.subtitle {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .steps-box {
+            text-align: left;
+            background: #1e2230;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 4px solid #a855f7;
+        }
+
+        .steps-box h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .steps-box ol {
+            padding-left: 20px;
+            color: #9ca3af;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .steps-box ol li strong {
+            color: #f3f4f6;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-youtube {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+        .btn-youtube:hover {
+            background-color: #cc0000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        }
+
+        /* Mail Kopyalama Alanı Tasarımı */
+        .copy-container {
+            background: #1e2230;
+            border: 1px dashed #374151;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .mail-instruction {
+            font-size: 13px;
+            color: #f3f4f6;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mail-instruction i {
+            color: #a855f7;
+        }
+
+        .copy-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .mail-text {
+            font-size: 14px;
+            color: #a855f7;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .btn-copy {
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-copy:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+        }
+
+        .footer-note {
+            font-size: 12px;
+            color: #6b7280;
+            border-top: 1px solid #2a2e3d;
+            padding-top: 20px;
+        }
+
+        .footer-note span {
+            color: #a855f7;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-badge">KralHET | Abone Ol Al</div>
+        
+        <h1>Özel İçeriğe / Siteye Erişim</h1>
+        <p class="subtitle">Bu özel içeriğe veya siteye erişim kazanmak için aşağıdaki adımları tamamlaman gerekmektedir.</p>
+
+        <div class="steps-box">
+            <h3><i class="fa-solid fa-list-check"></i> Nasıl Erişim Alınır?</h3>
+            <ol>
+                <li><strong>Abone Ol & Yorum Yap:</strong> Kanalıma abone ol ve son videoma yorum bırak.</li>
+                <li><strong>Mail Gönder:</strong> Aşağıdaki adrese mail atarak YouTube kanalının adını gönder ve maile istediğin site konusunu yaz.</li>
+                <li><strong>Kontrol & Onay:</strong> Kontrol edildikten sonra erişim linkin sana mail üzerinden iletilecektir!</li>
+            </ol>
+        </div>
+
+        <div class="btn-group">
+            <a href="https://www.youtube.com/@KralHET" target="_blank" class="btn btn-youtube">
+                <i class="fa-brands fa-youtube"></i> Kanalıma Abone Ol & Son Videoma Yorum Yap
+            </a>
+        </div>
+
+        <!-- Mail Kopyalama Alanı -->
+        <div class="copy-container">
+            <div class="mail-instruction">
+                <i class="fa-solid fa-circle-exclamation"></i> YouTube kanalının adını ve istediğin site konusunu gönder:
+            </div>
+            <div class="copy-box">
+                <div class="mail-text">
+                    <i class="fa-solid fa-envelope"></i> nerdhet@gmail.com
+                </div>
+                <button class="btn-copy" onclick="copyEmail()">
+                    <i class="fa-solid fa-copy"></i> Adresi Kopyala
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            Tasarım & Altyapı: <span>HET</span> | KL-HET
+        </div>
+    </div>
+
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText("nerdhet@gmail.com");
+            const btn = document.querySelector('.btn-copy');
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Kopyalandı!';
+            btn.style.backgroundColor = '#10b981';
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-copy"></i> Adresi Kopyala';
+                btn.style.backgroundColor = '#2563eb';
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
